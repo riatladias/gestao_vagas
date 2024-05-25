@@ -38,9 +38,7 @@ public class AuthCompanyUseCase {
 
         var passwordMatches = this.passwordEncoder.matches(authCompanyDTO.getPassword(), company.getPassword());
 
-        if (!passwordMatches) {
-            throw new AuthenticationException();
-        }
+        if (!passwordMatches) throw new AuthenticationException();
 
         Algorithm algorithm = Algorithm.HMAC256(secretKey);
         var token = JWT.create().withIssuer("javagas")
