@@ -37,5 +37,4 @@ public class JobController {
 
         return this.createJobUseCase.execute(jobEntity);
     }
-
 }
