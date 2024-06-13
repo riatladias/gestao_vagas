@@ -32,7 +32,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/candidate")
-@Tag(name = "Candidato", description = "Informações do candidato") // Agrupando todas rotas por tag
+@Tag(name = "Candidato", description = "Informações do candidato")
 public class CandidateController {
 
     @Autowired
@@ -50,7 +50,6 @@ public class CandidateController {
             @ApiResponse(responseCode = "200", content = {
                     @Content(schema = @Schema(implementation = CandidateEntity.class))
             }),
-            // inserindo resposta de error
             @ApiResponse(responseCode = "400", description = "Usuário já existe")
     })
     public ResponseEntity<Object> create(@Valid @RequestBody CandidateEntity candidateEntity) {
@@ -70,7 +69,6 @@ public class CandidateController {
             @ApiResponse(responseCode = "200", content = {
                     @Content(schema = @Schema(implementation = ProfileCandidateResponseDTO.class))
             }),
-            // inserindo resposta de error
             @ApiResponse(responseCode = "400", description = "User not found")
     })
     public ResponseEntity<Object> get(HttpServletRequest request) {
