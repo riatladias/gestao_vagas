@@ -4,7 +4,7 @@
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/riatladias)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/riatladias/gestao_vagas/blob/main/LICENSE)
 
 
 ## 🔥 Descrição
@@ -19,7 +19,7 @@ API REST para controle de Empresas, Vagas e aplicações, utilizando dos princip
 
 ```bash
 # Clonar repositório
-git clone https://github.com/riatladias/gestao-de-vagas
+git clone https://github.com/riatladias/gestao_vagas.git
 
 # Entrar na pasta do projeto
 cd gestao_vagas
