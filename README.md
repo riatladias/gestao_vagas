@@ -60,6 +60,7 @@ http://localhost:8080/swagger-ui/index.html#/
 | <kbd>POST /candidate/auth</kbd> | rota de autenticação do candidato, veja [detalhes](#post-auth-detail)                                           |
 | <kbd>GET /candidate/</kbd>      | Essa função é reponsável por buscar as informações do perfil do candidato, veja [detalhes](#get-profile-detail) |
 
+---
 <h3 id="post-create-detail">POST /candidate/</h3>
 
 **REQUEST**
